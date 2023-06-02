@@ -2,7 +2,6 @@
 import { livros } from '@/_data/livros.js'
 import { 
   carrinho,
-  adicionarAoCarrinho,
   removerItemCarrinho,
   atualizaQuantidadeItem
  } from '@/_data/carrinho.js';

@@ -1,4 +1,5 @@
 <script setup>
+import { adicionarAoCarrinho } from '@/_data/carrinho.js'
 const props = defineProps({
     livro: Object
 })
