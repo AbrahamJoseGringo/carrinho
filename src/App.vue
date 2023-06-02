@@ -18,7 +18,7 @@ function formatarPreco(preco) {
   <h1>Minha livraria</h1>
   <div class="container-geral">
     <div class="listagem-livros">
-     <card-livro />
+     <card-livro v-for="livro in livros" :key="livro.id" :livro="livro"/>
     </div>
     <div class="carrinho">
       <h2>Meu carrinho</h2>
@@ -125,37 +125,4 @@ function formatarPreco(preco) {
   flex-wrap: wrap;
 }
 
-.card-livro {
-  margin: 5px 10px;
-  padding: 10px;
-  background-color: beige;
-  border-radius: 10px;
-  width: 180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.wrap-livro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  border-radius: 10px;
-  width: 180px;
-  height: 270px;
-}
-.capa-livro {
-  width: 90%;
-  max-height: 100%;
-}
-
-.card-livro p {
-  margin: 0;
-}
-
-.card-livro .titulo-livro {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
 </style>
