@@ -1,10 +1,10 @@
 export const livros = [
   {
     id: 1,
-    title: 'O Poderoso Chefão',
-    author: 'Mario Puzo',
-    price: 49.9,
-    img: 'https://m.media-amazon.com/images/I/31jGFI5wX2L._SX331_BO1,204,203,200_.jpg'
+    title: 'Heartstopper: Dois garotos, um encontro (vol. 1)',
+    author: 'Alice Oseman',
+    price: 45.59,
+    img: 'https://m.media-amazon.com/images/I/51wx3A+5s6L._SX347_BO1,204,203,200_.jpg'
   },
   {
     id: 2,
@@ -15,10 +15,10 @@ export const livros = [
   },
   {
     id: 3,
-    title: 'O Pequeno Príncipe',
-    author: 'Antoine de Saint-Exupéry',
-    price: 19.9,
-    img: 'https://m.media-amazon.com/images/I/41afCn3PQUL._SY344_BO1,204,203,200_QL70_ML2_.jpg'
+    title: 'The Rising of the Shield Hero, Volume 1',
+    author: 'Aneko Yusagi',
+    price: 67.49,
+    img: 'https://m.media-amazon.com/images/I/61kNrLdRaOL._SX350_BO1,204,203,200_.jpg'
   },
   {
     id: 4,
