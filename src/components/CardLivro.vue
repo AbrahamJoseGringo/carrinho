@@ -28,36 +28,72 @@ function formatarPreco(preco) {
 
 <style scoped>
 .card-livro {
-  margin: 5px 10px;
-  padding: 10px;
-  background-color: beige;
-  border-radius: 10px;
-  width: 180px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card-info-livro {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-.wrap-livro {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: white;
-  border-radius: 10px;
-  width: 180px;
-  height: 270px;
+  margin-bottom: 20px;
 }
+
 .capa-livro {
-  width: 90%;
-  max-height: 100%;
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
-.card-livro p {
-  margin: 0;
-}
-
-.card-livro .titulo-livro {
+.titulo-livro {
+  font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 5px;
 }
+
+.autor-livro {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.preco-livro {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f44336;
+  margin-bottom: 10px;
+}
+
+.card-buttons-livros {
+  display: flex;
+  justify-content: space-between;
+}
+.card-buttons-livros {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.card-buttons-livros m-button {
+  background-color: #f44336;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.card-buttons-livros m-button:hover {
+  background-color: #c62828;
+}
+
+
 </style>
+
+
+
