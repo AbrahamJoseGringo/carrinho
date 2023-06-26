@@ -1,17 +1,13 @@
 <script setup>
- import ListaLivro from '@/components/ListaLivro.vue'
- import MeuCarrinho from '@/components/MeuCarrinho.vue'
+ 
 </script>
 
 <template>
-  <div>
+  <aside>
     <nav class="barra-navegacao">
       <h1>Minha Livraria</h1>
-      <ul class="menu-navegacao">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Livros</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
+      <router-link to="/">Home</router-link>
+      <router-link to="/meucarrinho">Carrinho</router-link>
       <div class="carrinho-compras">
         <span class="carrinho-icone">
           <i class="fas fa-shopping-cart"></i>
@@ -19,11 +15,10 @@
         <span class="carrinho-quantidade">0</span>
       </div>
     </nav>
-    <div class="container-geral">
-      <lista-livro />
-      <meu-carrinho />
-    </div>
-  </div>
+  </aside>
+  <main>
+    <router-view />
+  </main>
 </template>
 
 <style scoped>
