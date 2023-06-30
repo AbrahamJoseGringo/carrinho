@@ -10,18 +10,18 @@ const props = defineProps({
 
 <style>
 button {
-  background-color: #98c6e9;
+  background-color: blue;
   color: #fff;
-  font-size: 1.1rem;
   border: none;
   border-radius: 5px;
-  padding: 8px 16px;
+  padding: 10px;
+  font-size: 1.2rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin: 5px;
 }
 
 button:hover {
-  background-color: #b8d8f1;
+  background-color: darkblue;
 }
 
 </style>

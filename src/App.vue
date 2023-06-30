@@ -1,77 +1,38 @@
 <script setup>
- 
+ import ListaLivro from '@/components/ListaLivro.vue'
+ import MeuCarrinho from '@/components/MeuCarrinho.vue'
 </script>
 
 <template>
-  <aside>
-    <nav class="barra-navegacao">
-      <h1>Minha Livraria</h1>
-      <router-link to="/">Home</router-link>
-      <router-link to="/meucarrinho">Carrinho</router-link>
-      <div class="carrinho-compras">
-        <span class="carrinho-icone">
-          <i class="fas fa-shopping-cart"></i>
-        </span>
-        <span class="carrinho-quantidade">0</span>
-      </div>
-    </nav>
-  </aside>
-  <main>
-    <router-view />
-  </main>
+  <div class="container">
+    <h1 class="title">Minha Livraria</h1>
+    <div class="container-geral">
+      <lista-livro />
+      <meu-carrinho />
+    </div>
+  </div>
 </template>
-
 <style scoped>
-/* Estilos da barra de navegação */
-.barra-navegacao {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+.container {
+ max-width: auto;
+ margin: 0 auto;
+ padding: 20px;
+}
+.title{
+  font-family: "Arial", sans-serif;
+  font-size: 48px;
+  color: #0b84d4;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to right, #00b7ff, #00d9ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container-geral{
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-.barra-navegacao h1 {
-  font-size: 2rem;
-}
-
-.menu-navegacao {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-}
-
-.menu-navegacao li {
-  font-size: 1.2rem;
-}
-
-.menu-navegacao a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.menu-navegacao a:hover {
-  text-decoration: underline;
-}
-
-.carrinho-compras {
-  display: flex;
-  align-items: center;
-}
-
-.carrinho-icone {
-  font-size: 1.5rem;
-  margin-right: 5px;
-}
-
-.carrinho-quantidade {
-  background-color: #f44336;
-  color: #fff;
-  font-size: 0.9rem;
-  padding: 5px;
-  border-radius: 50%;
-}
 </style>
 
 

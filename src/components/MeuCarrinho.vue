@@ -52,42 +52,25 @@ function formatarPreco(preco) {
 </template>
 
 <style scoped>
-.wrap-carrinho {
-  display: flex;
-  flex-direction: column;
-}
-
-.carrinho-total {
-  font-size: 20px;
+.wrap-carrinho .carrinho-total {
+  position: fixed;
+  bottom: 3%;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 20px;
 }
 
-.item-carrinho {
+.item-carrinho .info-livro {
   display: flex;
   margin-bottom: 10px;
 }
-
-.info-livro p {
-  margin: 0;
-  font-size: 16px;
-}
-
-.item-carrinho {
-  align-items: center;
-  margin-bottom: 20px;
-}
-
 .detalhes-livro {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-
 .detalhes-livro p {
   margin: 0;
 }
-
 .detalhes-livro div {
   display: flex;
   justify-content: space-between;
@@ -114,31 +97,11 @@ function formatarPreco(preco) {
 }
 
 .info-livro-preco {
-  font-weight: bold;
+  margin-left: auto;
 }
-
 .icon-capa-livro {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 30px;
+  margin-right: 10px;
 }
 
-.carrinho {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.imagem-livro {
-  width: 80px;
-  height: 120px;
-  overflow: hidden;
-  margin-right: 20px;
-}
 </style>
