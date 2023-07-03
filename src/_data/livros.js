@@ -4,8 +4,7 @@ export const livros = [
     title: 'Heartstopper: Dois garotos, um encontro (vol. 1)',
     author: 'Alice Oseman',
     price: 45.59,
-    img1: 'https://m.media-amazon.com/images/I/51wx3A+5s6L._SX347_BO1,204,203,200_.jpg',
-    img2: 'https://m.media-amazon.com/images/S/aplus-media-library-service-media/fe1371ed-ba45-4a26-bd82-7c842ad30957.__CR0,0,300,300_PT0_SX300_V1___.png'
+    img: 'https://m.media-amazon.com/images/I/51wx3A+5s6L._SX347_BO1,204,203,200_.jpg'
   },
   {
     id: 2,
